@@ -1,31 +1,13 @@
 public class Member {
+    private static int indexOfMember=1;
     private String name;
-    private String message;
-    private String messageTime;
-
-    public Member(String name) {
-        this.name = name;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
+    public Member() {
+        this.name = "Member"+indexOfMember;
+        ++indexOfMember;
     }
 
     public String getName() {
         return name;
     }
-
-
-
-    public String getMessageTime() {
-        return messageTime;
-    }
-
-    public void setMessageTime(String messageTime) {
-        this.messageTime = messageTime;
-    }
 }
+
